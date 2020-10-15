@@ -19,10 +19,8 @@ export class AppComponent {
         .subscribe(event => this.someMethod(event));
     }
   }
-
   someMethod($event) {
     this.islistening = true;
     this.paragraph.nativeElement.textContent = $event.target.value;
   }
-
 }
